@@ -487,7 +487,7 @@ public class VlcPlayerActivity extends AppCompatActivity implements View.OnClick
             case R.id.start://开始播放
                 startLive(path);
                 break;
-            case R.id.back_statue://返回
+            case R.id.back_statue://未开启直播界面的时候,返回按钮
                 finish();
                 break;
             case R.id.back://返回
@@ -495,7 +495,7 @@ public class VlcPlayerActivity extends AppCompatActivity implements View.OnClick
                     vlcRecordOver();
                 }
                 vlcVideoView.setAddSlave(null);
-                vlcVideoView.onStop();
+                vlcVideoView.onDestroy();
                 if (rtmpCamera3.isStreaming()) {
                     rtmpCamera3.stopStream();
                 }

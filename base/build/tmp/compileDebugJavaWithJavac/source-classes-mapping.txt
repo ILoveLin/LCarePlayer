@@ -7,8 +7,19 @@ com/hjq/base/BuildConfig.java
  com.hjq.base.BuildConfig
 com/hjq/base/action/BundleAction.java
  com.hjq.base.action.BundleAction
-com/hjq/base/action/AnimAction.java
- com.hjq.base.action.AnimAction
+com/hjq/base/BasePopupWindow.java
+ com.hjq.base.BasePopupWindow
+ com.hjq.base.BasePopupWindow$1
+ com.hjq.base.BasePopupWindow$Builder
+ com.hjq.base.BasePopupWindow$DismissListenerWrapper
+ com.hjq.base.BasePopupWindow$OnClickListener
+ com.hjq.base.BasePopupWindow$OnDismissListener
+ com.hjq.base.BasePopupWindow$OnShowListener
+ com.hjq.base.BasePopupWindow$PopupBackground
+ com.hjq.base.BasePopupWindow$ShowPostAtTimeWrapper
+ com.hjq.base.BasePopupWindow$ShowPostDelayedWrapper
+ com.hjq.base.BasePopupWindow$ShowPostWrapper
+ com.hjq.base.BasePopupWindow$ViewClickWrapper
 com/hjq/base/BaseFragmentAdapter.java
  com.hjq.base.BaseFragmentAdapter
 com/hjq/base/BaseFragment.java
@@ -48,16 +59,5 @@ com/hjq/base/BaseAdapter.java
  com.hjq.base.BaseAdapter$ViewHolder
 com/hjq/base/action/ActivityAction.java
  com.hjq.base.action.ActivityAction
-com/hjq/base/BasePopupWindow.java
- com.hjq.base.BasePopupWindow
- com.hjq.base.BasePopupWindow$1
- com.hjq.base.BasePopupWindow$Builder
- com.hjq.base.BasePopupWindow$DismissListenerWrapper
- com.hjq.base.BasePopupWindow$OnClickListener
- com.hjq.base.BasePopupWindow$OnDismissListener
- com.hjq.base.BasePopupWindow$OnShowListener
- com.hjq.base.BasePopupWindow$PopupBackground
- com.hjq.base.BasePopupWindow$ShowPostAtTimeWrapper
- com.hjq.base.BasePopupWindow$ShowPostDelayedWrapper
- com.hjq.base.BasePopupWindow$ShowPostWrapper
- com.hjq.base.BasePopupWindow$ViewClickWrapper
+com/hjq/base/action/AnimAction.java
+ com.hjq.base.action.AnimAction
