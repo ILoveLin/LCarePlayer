@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@color/gray"
+        app:srlEnableAutoLoadMore="false"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+        <!--app:srlPrimaryColor="@android:color/white"-->
+
+        <!--app:srlDrawableProgress="@drawable/ic_progress_puzzle"-->
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableArrowSize="20dp"
+            app:srlDrawableMarginRight="20dp"
+            app:srlDrawableProgress="@mipmap/icon_refresh_logo"
+            app:srlDrawableProgressSize="20dp"
+            app:srlEnableLastTime="true"
+            app:srlFinishDuration="500"
+            app:srlTextSizeTime="10dp"
+            app:srlTextSizeTitle="16sp"
+            app:srlTextTimeMarginTop="2dp" />
+        <!--纯滚动模式-->
+        <!--app:srlEnablePureScrollMode="true"-->
+        <!--刷新和加载更多设置-->
+        <!--app:srlEnableAutoLoadMore="false"-->
+        <!--app:srlEnableLoadMore="true"-->
+
+      <androidx.core.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:background="@color/colorLine" />
+
+              <com.company.shenzhou.view.ScaleImageView
+                  android:layout_width="80dp"
+                  android:layout_height="80dp"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="@dimen/padding_20"
+                  android:layout_marginBottom="@dimen/padding_20"
+                  android:adjustViewBounds="true"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:src="@mipmap/icon_logo"
+                  app:scaleRatio="1.3" />
+
+
+              <!--普通用户-->
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:background="@color/colorLine" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/padding_50"
+                  android:background="@color/color_f7f7f7"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="@dimen/padding_20"
+                  android:text="普通用户的操作权限如下(最低):"
+                  android:textColor="@color/black333333"
+                  android:textSize="@dimen/padding_16"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:background="@color/colorLine" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/padding_10"
+                      android:paddingLeft="@dimen/padding_20"
+                      android:text="观看直播：所有功能"
+                      android:textColor="@color/color_999999"
+                      android:textSize="@dimen/padding_14" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/padding_10"
+                      android:paddingLeft="@dimen/padding_20"
+                      android:text="设备管理：查看、添加、删除、修改"
+                      android:textColor="@color/color_999999"
+                      android:textSize="@dimen/padding_14" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/padding_10"
+                      android:paddingLeft="@dimen/padding_20"
+                      android:text="修改密码：最低权限、只能修改自身密码"
+                      android:textColor="@color/color_999999"
+                      android:textSize="@dimen/padding_14" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/padding_20"
+                      android:layout_marginTop="@dimen/padding_10"
+                      android:lineSpacingExtra="@dimen/padding_10"
+                      android:text="管理用户：最低权限、无法操作"
+                      android:textColor="@color/color_999999"
+                      android:textSize="@dimen/padding_14" />
+
+              </LinearLayout>
+
+
+              <!--权限用户-->
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:layout_marginTop="@dimen/padding_10"
+                  android:background="@color/colorLine" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/padding_50"
+                  android:background="@color/color_f7f7f7"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="@dimen/padding_20"
+                  android:text="权限用户的操作权限如下(中等):"
+                  android:textColor="@color/black333333"
+                  android:textSize="@dimen/padding_16"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:background="@color/colorLine" />
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/padding_10"
+                      android:paddingLeft="@dimen/padding_20"
+                      android:text="观看直播：所有功能"
+                      android:textColor="@color/color_999999"
+                      android:textSize="@dimen/padding_14" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/padding_10"
+                      android:paddingLeft="@dimen/padding_20"
+                      android:text="设备管理：查看、添加、删除、修改"
+                      android:textColor="@color/color_999999"
+                      android:textSize="@dimen/padding_14" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/padding_10"
+                      android:paddingLeft="@dimen/padding_20"
+                      android:text="修改密码：自身密码、普通用户密码"
+                      android:textColor="@color/color_999999"
+                      android:textSize="@dimen/padding_14" />
+
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:paddingLeft="@dimen/padding_10">
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/padding_10"
+                          android:paddingLeft="@dimen/padding_10"
+                          android:text="管理用户："
+                          android:textColor="@color/color_999999"
+                          android:textSize="@dimen/padding_14" />
+
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/padding_10"
+                          android:lineSpacingExtra="@dimen/padding_10"
+                          android:text="中等权限、可以删除自身、删除普通用户、添加普通用户"
+                          android:textColor="@color/color_999999"
+                          android:textSize="@dimen/padding_14" />
+                  </LinearLayout>
+
+              </LinearLayout>
+
+
+              <!--超级管理员-->
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:layout_marginTop="@dimen/padding_10"
+                  android:background="@color/colorLine" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/padding_50"
+                  android:background="@color/color_f7f7f7"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="@dimen/padding_20"
+                  android:text="超级管理员的操作权限如下(最高):"
+                  android:textColor="@color/black333333"
+                  android:textSize="@dimen/padding_16"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:background="@color/colorLine" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/padding_10"
+                      android:paddingLeft="@dimen/padding_20"
+                      android:text="观看直播：所有功能"
+                      android:textColor="@color/color_999999"
+                      android:textSize="@dimen/padding_14" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/padding_10"
+                      android:paddingLeft="@dimen/padding_20"
+                      android:text="设备管理：查看、添加、删除、修改"
+                      android:textColor="@color/color_999999"
+                      android:textSize="@dimen/padding_14" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/padding_10"
+                      android:paddingLeft="@dimen/padding_20"
+                      android:text="修改密码：自身密码、普通用户密码、权限用户密码"
+                      android:textColor="@color/color_999999"
+                      android:textSize="@dimen/padding_14" />
+
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:paddingLeft="@dimen/padding_10">
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/padding_10"
+                          android:lineSpacingExtra="@dimen/padding_10"
+                          android:paddingLeft="@dimen/padding_10"
+                          android:text="管理用户："
+                          android:textColor="@color/color_999999"
+                          android:textSize="@dimen/padding_14" />
+
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/padding_10"
+                          android:lineSpacingExtra="@dimen/padding_10"
+                          android:text="最高权限、除了不能删除自己以外,可以做任何事情；比如：删除用户、添加普通用户、把普通用户设置成为权限用户"
+                          android:textColor="@color/color_999999"
+                          android:textSize="@dimen/padding_14" />
+                  </LinearLayout>
+              </LinearLayout>
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:layout_marginTop="@dimen/padding_10"
+                  android:background="@color/colorLine"
+                  android:paddingTop="@dimen/padding_20" />
+
+          </LinearLayout>
+      </androidx.core.widget.NestedScrollView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="@color/gray"
+            app:srlDrawableProgress="@mipmap/icon_refresh_logo" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

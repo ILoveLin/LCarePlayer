@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.company.shenzhou">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--    // 监听熄屏和亮屏需要添加权限-->
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <!--    <uses-permission android:name="android.permission.DEVICE_POWER"/>-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />-->
+    <!--    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+
+
+    <application
+        android:name=".base.App"
+        android:allowBackup="true"
+        android:configChanges="orientation|screenSize"
+        android:icon="@mipmap/icon_app"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".ui.activity.login.SplashActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.login.GuideActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".ui.activity.login.LoginAnimatorActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <!--        <activity-->
+        <!--            android:name=".ui.activity.login.GSYPlayerActivity"-->
+        <!--            android:screenOrientation="portrait"-->
+
+        <!--            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"-->
+        <!--            android:theme="@style/Theme.AppCompat.Translucent" />-->
+        <activity
+            android:name=".ui.activity.PowerExplainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".ui.activity.vlc.VlcPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".ui.activity.vlc.TestVlcPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".ui.activity.zxing.ZXingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.hanlyjiang.library.fileviewer.tbs.TBSFileViewActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+        </activity>
+        <activity
+            android:name="com.artifex.mupdf.viewer.DocumentActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,115 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/page_colorAccent</item>
+        <item name="colorPrimaryDark">@color/page_colorPrimaryDark</item>
+        <item name="colorAccent">@color/page_colorAccent</item>
+    </style>
+
+
+    //pop  的style
+
+    <!--横线-->
+    <style name="LineStyleE5E5E5">popup_anim_style_bootom_right
+        <!--<item name="android:layout_marginTop">@dimen/padding_1</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#e5e5e5</item>
+    </style>
+    <!--对话框的 pop Style-->
+    <style name="popup_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
+
+
+    <style name="popup_anim_style_bootom_right">
+        <!--<item name="android:windowEnterAnimation">@anim/popup_in</item>-->
+        <item name="android:windowEnterAnimation">@anim/popup_bottom_right</item>
+        <item name="android:windowExitAnimation">@anim/popup_top_right</item>
+    </style>
+
+    <style name="popup_anim_style_bootom_left">
+        <!--<item name="android:windowEnterAnimation">@anim/popup_in</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/popup_out</item>-->
+        <item name="android:windowEnterAnimation">@anim/popup_bottom_left</item>
+        <item name="android:windowExitAnimation">@anim/popup_top_left</item>
+    </style>
+
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_gone</item>
+    </style>
+
+
+
+    <declare-styleable name="CircleImageView1">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+
+//加载框的样式
+    <style name="progressdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+
+    <!--  pop Style-->
+
+    <style name="menu_item_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/popupwindow_menu_item_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/menu_item_text_color</item>
+        <item name="android:background">@drawable/menu_item_selector</item>
+    </style>
+
+
+    <style name="menu_item_divider_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/popupwindow_menu_item_divider_height</item>
+        <item name="android:background">@color/menu_item_divider_color</item>
+    </style>
+
+    <style name="Font_Middle_Gray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_696969</item>
+    </style>
+
+    <!--中号字体-->
+    <style name="Font_Middle_Blue">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorConfirm</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

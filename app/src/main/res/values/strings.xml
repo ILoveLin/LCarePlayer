@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">CME Player</string>
+
+    <string-array name="section">
+        <item>老师</item>
+        <item>学生A</item>
+        <item>学生B</item>
+        <item>学生C</item>
+        <item>学生C</item>
+        <item>学生A</item>
+        <item>学生A</item>
+        <item>学生A</item>
+        <item>学生B</item>
+        <item>学生B</item>
+        <item>老师</item>
+        <item>学生A</item>
+        <item>学生B</item>
+        <item>学生C</item>
+        <item>学生C</item>
+        <item>学生A</item>
+        <item>学生A</item>
+        <item>学生A</item>
+        <item>学生B</item>
+        <item>学生B</item>
+        <item>老师</item>
+        <item>学生A</item>
+        <item>学生B</item>
+        <item>学生C</item>
+        <item>学生C</item>
+        <item>学生A</item>
+        <item>学生A</item>
+        <item>学生A</item>
+        <item>学生B</item>
+        <item>学生B</item>
+        <item>老师</item>
+        <item>学生A</item>
+        <item>学生B</item>
+        <item>学生C</item>
+        <item>学生C</item>
+        <item>学生A</item>
+        <item>学生A</item>
+        <item>学生A</item>
+        <item>学生B</item>
+        <item>学生B</item>
+    </string-array>
+
+    <string name="not_support_cpu">您的手机处理器暂时不支持播放</string>
+    <string name="no_network">网络不可用</string>
+    <string name="buffer">缓冲</string>
+    <string name="buffering">缓冲中...</string>
+    <string name="error_video_play">视频读取错误，请检查网络或退出后重试！</string>
+    <string name="video_try_reconnect">视频读取错误,请尝试重新读取!</string>
+
+    <string name="error_net">当前网络不可用，请检查您的网络设置</string>
+    <string name="error_net_toast">网络不给力</string>
+    <string name="determine">确定</string>
+    <string name="determine2">确认</string>
+    <string name="cancel">取消</string>
+    <string name="empty_error_net_server">数据加载失败，请返回重试!</string>
+
+    <string name="main_tab_homepage">用户</string>
+    <string name="main_tab_yidi">报销查询</string>
+    <string name="main_tab_drug_search">设备</string>
+    <string name="main_tab_recomment">我的</string>
+    <string name="main_tab_mine">我的的</string>
+    <!--    <string name="main_tab_biyao">比药</string>-->
+    <!-- 注册 -->
+    <string name="register_title">注册</string>
+    <string name="register_hint">手机号仅用于登录和保护账号安全</string>
+    <string name="register_login">登录</string>
+    <string name="register_password_hint1">设置6&#8211;18位登录密码</string>
+    <string name="register_password_hint2">请再次输入一次密码</string>
+    <string name="register_password_input_error">两次密码输入不一致，请重新输入</string>
+
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+
+    <string name="menu_item1">动态模式</string>
+    <string name="menu_item2">消息模式</string>
+    <string name="common_loading">连麦中&#8230;</string>
+    <string name="common_stop_loading">关麦中&#8230;</string>
+    <string name="permissions_check_warn">警告！</string>
+    <string name="permissions_check_ok">确定</string>
+    <!-- 通用的 -->
+    <string name="common_phone_input_hint">输入账号</string>
+    <string name="common_phone_input_error">账号输入不正确</string>
+
+    <string name="common_password_input_error">请输入密码</string>
+
+    <string name="common_code_input_hint">输入验证码</string>
+    <string name="common_code_send">发送验证码</string>
+    <string name="common_code_send_hint">验证码已发送，请注意查收</string>
+
+    <string name="common_step_next">下一步</string>
+    <string name="common_step_complete">完成</string>
+    <string name="common_step_commit">提交</string>
+
+
+    <string name="title_activity_style_classics">ClassicsHeader</string>
+
+
+</resources>

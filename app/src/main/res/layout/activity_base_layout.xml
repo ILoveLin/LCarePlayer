@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/fake_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusbar_view_height"
+        android:background="@color/colorPrimary" />
+    <!--        android:background="@color/color_f7f7f7"-->
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:background="@color/white"
+
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ib_left"
+            style="@style/ww"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="@dimen/padding_10"
+            android:src="@drawable/selector_titlebar_left"
+            android:textColor="@color/color_ffffff" />
+
+        <ImageButton
+            android:id="@+id/ib_left_1"
+            style="@style/ww"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="@dimen/padding_10"
+                android:src="@drawable/selector_titlebar_registerleft"
+
+        android:textColor="@color/color_ffffff"
+            android:visibility="invisible" />
+<!--        android:src="@drawable/selector_titlebar_registerleft"-->
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+            android:ellipsize="end"
+            android:ems="8"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_font_17" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/ww"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingBottom="@dimen/padding_10"
+            android:text="哈哈"
+            android:textColor="@color/title_bar_right_color"
+            android:textSize="@dimen/text_font_16"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/ib_right"
+            style="@style/ww"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="@dimen/padding_10" />
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/v_title_line"
+            style="@style/LineItemStyleE0E0E0"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

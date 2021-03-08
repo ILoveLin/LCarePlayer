@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">common</string>
+    <string name="text_indicator">%1$d/%2$d</string>
+
+
+    <string name="menu_item1">动态模式</string>
+    <string name="menu_item2">消息模式</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

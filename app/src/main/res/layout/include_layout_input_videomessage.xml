@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_10"
+    android:layout_marginTop="@dimen/padding_20"
+    android:background="@drawable/shape_cme_input"
+    android:orientation="vertical">
+
+
+    <com.company.shenzhou.utils.ClearEditText
+        android:id="@+id/cet_cme_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:background="@color/transparent"
+        android:hint="请输入设备账号"
+        android:lines="1"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingLeft="@dimen/padding_10"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black40"
+        android:textColorHint="@color/black20"
+        android:textSize="@dimen/padding_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine" />
+
+    <com.company.shenzhou.utils.ClearEditText
+        android:id="@+id/cet_cme_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:background="@color/transparent"
+        android:hint="请输入设备密码"
+        android:lines="1"
+        android:paddingRight="@dimen/padding_10"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/padding_10"
+        android:text=""
+        android:textColor="@color/black40"
+        android:textColorHint="@color/black20"
+        android:textSize="@dimen/padding_16" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine" />
+    <com.company.shenzhou.utils.ClearEditText
+        android:id="@+id/cet_cme_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:background="@color/transparent"
+        android:hint="请输入标题"
+        android:lines="1"
+        android:paddingRight="@dimen/padding_10"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/padding_10"
+        android:text=""
+        android:textColor="@color/black40"
+        android:textColorHint="@color/black20"
+        android:textSize="@dimen/padding_16" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine" />
+
+    <com.company.shenzhou.utils.ClearEditText
+        android:id="@+id/cet_cme_ip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:longClickable="true"
+        android:background="@color/transparent"
+        android:hint="请输入 ip 或 url播放地址"
+        android:lines="1"
+        android:paddingRight="@dimen/padding_10"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/padding_10"
+        android:textColor="@color/black40"
+        android:textColorHint="@color/black20"
+        android:textSize="@dimen/padding_16" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine" />
+    <com.company.shenzhou.utils.ClearEditText
+        android:id="@+id/cet_cme_note_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:background="@color/transparent"
+        android:hint="请输入备注信息"
+        android:lines="1"
+        android:paddingRight="@dimen/padding_10"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/padding_10"
+        android:text=""
+        android:textColor="@color/black40"
+        android:textColorHint="@color/black20"
+        android:textSize="@dimen/padding_16" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine" />
+    <com.company.shenzhou.utils.ClearEditText
+        android:id="@+id/cet_cme_port"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:background="@color/transparent"
+        android:hint="请输入直播端口号"
+        android:lines="1"
+        android:paddingRight="@dimen/padding_10"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/padding_10"
+        android:text=""
+        android:textColor="@color/black40"
+        android:textColorHint="@color/black20"
+        android:textSize="@dimen/padding_16" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine" />
+    <com.company.shenzhou.utils.ClearEditText
+        android:id="@+id/cet_cme_mic_port"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:background="@color/transparent"
+        android:hint="请输入语音端口号"
+        android:lines="1"
+        android:paddingRight="@dimen/padding_10"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/padding_10"
+        android:text=""
+        android:textColor="@color/black40"
+        android:textColorHint="@color/black20"
+        android:textSize="@dimen/padding_16" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine" />
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/cet_cme_start_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45"
+        android:clickable="true"
+        android:background="@color/transparent"
+        android:hint="请输入设备类型"
+        android:lines="1"
+        android:paddingLeft="@dimen/padding_10"
+        android:text=""
+        android:paddingRight="@dimen/padding_10"
+        android:singleLine="true"
+        android:textColor="@color/black40"
+        android:textColorHint="@color/black20"
+        android:textSize="@dimen/padding_16" />
+<!--    <com.company.shenzhou.utils.ClearEditText-->
+<!--        android:id="@+id/cet_cme_start_type"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/padding_45"-->
+<!--        android:background="@color/transparent"-->
+<!--        android:hint="0:播放HD3,1:播放一体机,2:播放url链接地址"-->
+<!--        android:lines="1"-->
+<!--        android:paddingLeft="@dimen/padding_10"-->
+<!--        android:text=""-->
+<!--        android:singleLine="true"-->
+<!--        android:textColor="@color/black40"-->
+<!--        android:textColorHint="@color/black40"-->
+<!--        android:textSize="@dimen/padding_16" />-->
+
+</LinearLayout>

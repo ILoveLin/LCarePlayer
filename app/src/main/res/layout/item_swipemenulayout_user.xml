@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.company.shenzhou.view.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeMenuLay"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/padding_50"
+    android:clickable="true"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:background="@drawable/selector_item_ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_50"
+            android:orientation="horizontal">
+
+            <com.company.shenzhou.view.SwitchButton
+                android:id="@+id/slide_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:background="@drawable/selector_item_ffffff"
+                android:clickable="false"
+                android:gravity="center"
+                android:paddingRight="@dimen/padding_16"
+                android:textColor="@color/black"
+                android:textSize="@dimen/padding_22" />
+
+            <TextView
+                android:id="@+id/change_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/slide_switch"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_16"
+                android:text="修改密码"
+                android:textColor="@color/blue007AFF"
+                android:textSize="@dimen/padding_14" />
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/icon_add_user"
+                android:drawablePadding="@dimen/padding_16"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="@dimen/padding_15"
+                android:text="测试数据"
+                android:textColor="@color/black333333"
+                android:textSize="@dimen/padding_17" />
+
+            <TextView
+                android:layout_toRightOf="@+id/tv_text"
+                android:id="@+id/tv_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="@dimen/padding_5"
+                android:text="(超级用户)"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/padding_12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_0.5"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/padding_15"
+                android:layout_marginRight="@dimen/padding_15"
+                android:background="@color/color_DDDDDD" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/cancleBtn"
+        android:layout_width="@dimen/padding_80"
+        android:layout_height="match_parent"
+        android:background="@color/white50"
+        android:text="取消"
+        android:textColor="@color/color_50b3ff"
+        android:textSize="@dimen/padding_15"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/delBtn"
+        android:layout_width="@dimen/padding_80"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="@dimen/padding_15" />
+
+</com.company.shenzhou.view.SwipeMenuLayout>

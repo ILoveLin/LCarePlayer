@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:clickable="false"
+    android:layout_marginBottom="-25dp"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/layout_bottom_lin"
+            android:background="@color/color_dddddd" />
+
+        <LinearLayout
+            android:id="@+id/layout_bottom_lin"
+            android:layout_width="match_parent"
+            android:layout_height="53.8dip"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/color_ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tab_homepage"
+                style="@style/TabMain"
+                android:drawableTop="@drawable/selector_tab_homepage"
+                android:text="@string/main_tab_homepage" />
+
+            <TextView
+                android:id="@+id/tv_tab_drug_query"
+                style="@style/TabMain"
+                android:drawableTop="@drawable/selector_tab_regional"
+                android:text="@string/main_tab_drug_search" />
+
+            <LinearLayout
+                android:layout_width="@dimen/padding_10"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="@dimen/padding_10"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_tab_recomment"
+                style="@style/TabMain"
+                android:drawableTop="@drawable/selector_tab_zixun"
+                android:text="@string/main_tab_recomment" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rel_tab_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onBtnClick">
+
+                <TextView
+                    android:id="@+id/tv_tab_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/selector_tab_mine"
+                    android:drawablePadding="@dimen/padding_2"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/padding_5"
+                    android:text="@string/main_tab_mine"
+                    android:textColor="@drawable/selector_color_tab_main"
+                    android:textSize="@dimen/text_font_12" />
+
+                <ImageView
+                    android:id="@+id/iv_tab_mine"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/padding_3"
+                    android:layout_marginRight="@dimen/padding_32"
+                    android:src="@mipmap/icon_red_dot"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

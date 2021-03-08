@@ -1,0 +1,132 @@
+//plugins {
+//    id 'com.android.application'
+//}
+apply plugin: 'com.android.application' // apply plugin
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.company.shenzhou"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0.3"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true    //避免64K打包bug
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    greendao {
+        schemaVersion 1 //数据库版本号
+        daoPackage 'com.company.shenzhou.player.db'
+// 设置DaoMaster、DaoSession、Dao 包名
+        targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录,请注意，这里路径用/不要用.
+        generateTests false //设置为true以自动生成单元测试。
+        targetGenDirTests 'src/main/java' //应存储生成的单元测试的基本目录。默认为 src / androidTest / java。
+    }
+
+
+}
+
+dependencies {
+    implementation project(':commonlib')
+    implementation project(':libvlc')
+    implementation project(':lib_fileviewer')
+    implementation project(path: ':base')
+    implementation project(path: ':widget')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation project(path: ':rtplibrary')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:support-v4:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.ext.constraintLayoutVersion"
+
+    //黄油刀
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-7'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
+
+    implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.0.4@aar'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:1.3.4@aar'
+    //多条目的ItemAdapter
+//    api 'com.github.chaychan:MultipleItemRvAdapter:1.0.4' //建议使用最新版本
+    implementation 'cn.jzvd:jiaozivideoplayer:6.4.1'
+    //底部tab    1.2.0
+//    api 'com.github.chaychan:BottomBarLayout:1.0.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'me.weyye.ColorTrackTabLayout:library:1.0.1'
+//    api 'com.github.chengzhicao:ChannelView:v1.0.7'
+
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.0.4@aar'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:1.3.4@aar'
+
+
+    //网络请求
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.3.0' //okttp依赖
+    //https://www.jianshu.com/p/721381cf974f     okhttputils使用链接
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation 'com.google.code.gson:gson:2.8.4'
+//    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-7'
+//    api 'com.github.bumptech.glide:glide:3.7.0'
+
+
+
+    //greendao 数据库
+    implementation 'org.greenrobot:greendao:3.2.2' // add library
+
+    //以下是播放器用到的依赖
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+    //权限请求
+//    implementation 'com.github.hotchemi:permissionsdispatcher:2.3.1'
+//    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.3.1'
+
+//    implementation 'com.shuyu:gsyVideoPlayer-java:7.0.1'
+//    //是否需要ExoPlayer模式
+//    implementation 'com.shuyu:GSYVideoPlayer-exo2:7.0.1'
+//    //更多ijk的编码支持
+//    implementation 'com.shuyu:gsyVideoPlayer-ex_so:7.0.1'
+
+//    implementation 'me.jessyan:autosize:1.2.1'
+    implementation 'com.hjq:xxpermissions:9.6'
+    //ZXing 二维码扫描
+    implementation 'cn.bingoogolapple:bga-qrcode-zxing:1.3.7'
+    //图片选择二维码
+    implementation 'cn.bingoogolapple:bga-photopicker:1.2.8@aar'
+    implementation 'cn.bingoogolapple:bga-baseadapter:1.2.9@aar'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    //下拉选择
+    implementation 'com.github.arcadefire:nice-spinner:1.4.4'
+
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+}

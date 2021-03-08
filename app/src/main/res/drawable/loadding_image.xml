@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@mipmap/image_loadding00"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding01"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding02"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding03"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding04"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding05"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding06"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding07"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding08"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding09"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding10"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding11"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding12"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding13"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding14"
+        android:duration="80" />
+    <item
+        android:drawable="@mipmap/image_loadding15"
+        android:duration="80" />
+</animation-list>

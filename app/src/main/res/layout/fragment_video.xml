@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@color/gray"
+
+        app:srlEnableAutoLoadMore="false"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+        <!--app:srlPrimaryColor="@android:color/white"-->
+
+        <!--app:srlDrawableProgress="@drawable/ic_progress_puzzle"-->
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableArrowSize="20dp"
+            app:srlDrawableMarginRight="20dp"
+            app:srlDrawableProgress="@mipmap/icon_refresh_logo"
+            app:srlDrawableProgressSize="20dp"
+            app:srlEnableLastTime="true"
+            app:srlFinishDuration="500"
+            app:srlTextSizeTime="10dp"
+            app:srlTextSizeTitle="16sp"
+            app:srlTextTimeMarginTop="2dp" />
+        <!--纯滚动模式-->
+        <!--app:srlEnablePureScrollMode="true"-->
+        <!--刷新和加载更多设置-->
+        <!--app:srlEnableAutoLoadMore="false"-->
+        <!--app:srlEnableLoadMore="true"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            <TextView-->
+
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1px"-->
+<!--                android:background="@color/colorLine" />-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingTop="@dimen/padding_20"
+                    android:paddingBottom="@dimen/padding_20"
+                    android:text="设备的添加"
+                    android:textColor="@color/black80"
+                    android:textSize="@dimen/padding_16" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add_code"
+                    style="@style/ButtonStyle"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫码" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add"
+                    style="@style/ButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加" />
+
+                <View
+                    android:layout_width="@dimen/padding_10"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/padding_15"
+                android:layout_marginRight="@dimen/padding_15"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/videoRecycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/page_empty_desc"
+                    style="@style/Font15Style666666"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/padding_12"
+                    android:text="暂无数据!"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="@color/gray"
+            app:srlDrawableProgress="@mipmap/icon_refresh_logo" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
